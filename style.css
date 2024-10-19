@@ -43,7 +43,9 @@ a {
 }
 
 .home {
-    color: aliceblue;
     display: flex;
     align-items: center;
+    height: 100px;
+    padding-top: 60px;
+    color: #fff;
 }
