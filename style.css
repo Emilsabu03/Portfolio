@@ -42,10 +42,73 @@ a {
     margin-left: 30px;
 }
 
-.home {
+.home{
     display: flex;
     align-items: center;
-    height: 100px;
-    padding-top: 60px;
+    height: 100vh;
+    font-size: larger;
+    padding: 60px 9% 0;
+    margin-left: 10%;
+    color: #fff;
+}
+
+.home-info h1 {
+    font-size: 50px,;
+}
+
+.home-info h2 {
+    font-size: 32px;
+    margin-top: -10%;
+}
+
+.home-info p {
+    font-size: 15px;
+    margin-top: -10px 0 25px;
+}
+
+.button-social {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 3px;
+    background: green;
+    border: 2px solid green;
+    border-radius: 40px;
+    box-shadow: 0 0 10px whitesmoke;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.home-info .button-social .social {
+    margin-left: 25px;
+}
+
+.home-info .button-social .social a {
+    display: inline-flex;
+    margin-left: 15px;
+    padding: 8px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    
+}
+
+.home-img .img-box {
+    width:  32vw;
+    height: 32vw;
+}
+
+.img-item img {
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.img-box {
     color: #fff;
 }
