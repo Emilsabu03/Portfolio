@@ -42,6 +42,11 @@ a {
     margin-left: 30px;
 }
 
+.passion h4 {
+    color: blueviolet;
+}
+
+
 .home{
     display: flex;
     align-items: center;
@@ -111,4 +116,8 @@ a {
     margin-left: 10px;
     border-radius: 50%; 
     object-fit: cover;
+}
+
+.skills h3{
+    margin-left: auto;
 }

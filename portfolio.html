@@ -33,6 +33,16 @@
         .photos {
             padding: 25px 15%;
         }
+
+        .video {
+            height: 150px;
+            width: 150px;
+            padding: 25px 30%;
+            color: aliceblue;
+            width: 100vw;
+            transform: translateY(100px);
+            padding: 25px 6%;
+        }
     </style>
 </head>
 <body>
@@ -40,8 +50,9 @@
     <nav class="navbar">
         <a href="index.html" class="logo"><b>Portfolio.</b></a>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="skills.html">Skills</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -51,14 +62,21 @@
         <h1><b>Projects From Visual Design</b></h1>
     </div>
     <div class="logo1">
-        <img src="Logo.png" width="1200" height="700">
+        <img src="/Images/Logo.png" width="1200" height="700">
     </div>
     <div class="box">
        <h1><b>Photos From Digital Media Foundation</b></h1>
     </div>
     <div class="photos">
-       <img src="LinkedIn Profile.png" width="1100" height="700">
-       <img src="Lighting.JPG" width="980" height="700">
+       <img src="/Images/LinkedIn Profile.png" alt="My linkedIn profile picture" width="1100" height="700">
+       <img src="/Images/Lighting.JPG" alt="Lighting project from Digital Media Foundation" width="980" height="700">
+    </div>
+    <div class="video">
+        <h1><b> First Video Shot Of Digital Media Foundation Assignment</b></h1>
+        <video width="1300" controls>
+            <source src="/Video/Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </body>
 </html>
