@@ -8,7 +8,7 @@
 }
 
 body {
-    background: black;
+    background: rgb(5, 15, 0);
 }
 
 a {
@@ -56,6 +56,10 @@ a {
     font-size: 50px,;
 }
 
+.home .home-info h3 {
+    color: greenyellow;
+}
+
 .home-info h2 {
     font-size: 32px;
     margin-top: -10%;
@@ -74,9 +78,9 @@ a {
 .button {
     display: inline-block;
     padding: 10px 3px;
-    background: green;
-    border: 2px solid green;
-    border-radius: 40px;
+    background: greenyellow;
+    border: 3px solid green;
+    border-radius: 50px;
     box-shadow: 0 0 10px whitesmoke;
     font-size: 16px;
     color: black;
@@ -107,8 +111,4 @@ a {
     margin-left: 10px;
     border-radius: 50%; 
     object-fit: cover;
-}
-
-.img-box {
-    color: #fff;
 }
