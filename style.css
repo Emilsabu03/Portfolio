@@ -195,25 +195,36 @@ a {
     color: white;
 }
 
-.heading h1{
-    margin: 200px auto 20px;
+
+.heading h1 {
     text-align: center;
     color: greenyellow;
+    margin-top: 250px;
+}
+.table-top {
+    width: 75%;
+    margin: 40px auto;
+    overflow-x: auto; 
+    display: flex;
+    justify-content: center;
 }
 
-.table {
-    width: 75%;
-    margin: 30px auto;
+table {
+    width: 100%;
     border-collapse: collapse;
 }
-.th, td {
+
+th, td {
     border: 2px solid white;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
 }
-.td {
+
+td {
     color: aqua;
 }
-.th {
-    background-color: white;
+
+th {
+    background-color: black;
+    color: greenyellow;
 }
