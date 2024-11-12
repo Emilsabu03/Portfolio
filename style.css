@@ -102,7 +102,7 @@ a {
     padding: 8px;
     border: 2px solid greenyellow;
     border-radius: 50%;
-    
+
 }
 
 .home-img .img-box {
@@ -205,6 +205,7 @@ a {
     margin: 40px auto;
     overflow-x: auto; 
     display: flex;
+    justify-content: center;
 }
 
 table {
@@ -226,11 +227,28 @@ th {
     background-color: black;
     color: greenyellow;
 }
-
-footer p {
+.footerh p {
     color: #fff;
     text-align: center;
-    transform: translate(-10px);
+    transform: translateY(-25px);
+}
+
+.footerp p {
+    color: #fff;
+    text-align: center;
+    transform: translateY(920px);
+}
+
+.footers p {
+    color: #fff;
+    text-align: center;
+    transform: translateY(130px);
+}
+
+.footerc p {
+    color: #fff;
+    text-align: center;
+    transform: translateY(370px);
 }
 
 /* Responsive Dimension */
@@ -239,66 +257,53 @@ footer p {
     .navbar {
         padding: 10px 3%;
     }
-
     .navbar .logo {
         font-size: 20px;
     }
-
     .navbar ul li {
         margin-left: 10px;
     }
-
     .home {
         padding: 50px 3% 10px;
         flex-direction: column;
         align-items: flex-start;
     }
-
     .home-info h1 {
         font-size: 20px;
     }
-
     .home-info h2, .home-info h3 {
         font-size: 16px;
     }
-
     .home-info p {
         font-size: 12px;
     }
-
     .button {
         font-size: 12px;
         padding: 6px 12px;
     }
-
     .skills .heading h1 {
         font-size: 20px;
         margin-top: 50px;
     }
-
     .table-top {
         width: 95%;
         margin: auto;
         font-size: 70%;
         justify-content: center;
     }
-
     th, td {
         padding: 8px;
     }
-
     .contact {
         font-size: 20px;
         margin-top: 40px;
     }
-
     .button-social {
         flex-direction: column;
         height: 100%;
         justify-content: flex-end;
         transform: translateY(20px);
     }
-
     .social {
         display: flex;
         justify-content: center;
@@ -306,7 +311,6 @@ footer p {
         width: 100%;
         transform: translateY(60%) translateX(-10%);
     }
-
     .img-item img {
         width: 150px;
         height: 150px;
@@ -315,62 +319,49 @@ footer p {
         border-radius: 50%;
         transform: translateY(-60px);
     }    
-
     footer p {
         display: flex;
         font-size: 12px;
         padding: 10%;
         transform: translateY(-50px);
     }
-
-
     .navbar {
         padding: 10px 3%;
     }
-
     .navbar .logo {
         font-size: 16px;
     }
-
     .navbar ul li {
         margin-left: 5px;
     }
-
     .navbar ul li a {
         font-size: 12px;
     }
-
     .visual h1, .box h1, .script h1, .video h1 {
         display: flex;
         font-size: 18px;
     }
-
     .visual h1, b{
         display: flex;
         font-size: 16px;
     }
-
     .box h1, b{
         display: flex;
         font-size: 16px;
     }
-
     .logo1 img, .photos img {
         display: flex;
         width: 100%;
         height: auto;
     }
-
     .pdf ol li a {
         display: flex;
         font-size: 14px;
     }
-
     .video video {
         display: flex;
         width: 100%;
     }
-
     .heading h1 {
         font-size: 40px;
         font-weight: bold;
@@ -378,19 +369,19 @@ footer p {
         margin-bottom: 10px;
     }
 
+    .footerh p {
+        display: flex;
+        font-size: 12px;
+        padding: 15%;
+        transform: translateY(-90px);
+    }
+
     .footerp p {
         display: flex;
         font-size: 12px;
         padding: 10%;
-        transform: translateY(200px);
+        transform: translateY(180px);
     }
-
-    footer p {
-        color: #fff;
-        text-align: center;
-        transform: translate(200px);
-    }
-
     .footers p {
         display: flex;
         font-size: 12px;
@@ -404,12 +395,10 @@ footer p {
         padding: 10%;
         transform: translateY(180px);
     }
-
     .footerc p {
         display: flex;
         font-size: 12px;
         padding: 10%;
         transform: translateY(300px);
     }
-
 }
