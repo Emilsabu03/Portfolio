@@ -230,8 +230,10 @@ th {
 footer p {
     color: #fff;
     text-align: center;
+    transform: translate(-10px);
 }
 
+/* Responsive Dimension */
 
 @media screen and (max-width: 600px) {
     .navbar {
@@ -380,7 +382,13 @@ footer p {
         display: flex;
         font-size: 12px;
         padding: 10%;
-        transform: translateY(180px);
+        transform: translateY(200px);
+    }
+
+    footer p {
+        color: #fff;
+        text-align: center;
+        transform: translate(200px);
     }
 
     .footers p {
