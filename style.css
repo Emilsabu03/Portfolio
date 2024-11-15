@@ -294,6 +294,9 @@ th {
     th, td {
         padding: 8px;
     }
+
+    /* Contact Responsive */
+
     .contact {
         font-size: 20px;
         margin-top: 40px;
@@ -368,6 +371,8 @@ th {
         text-align: center;
         margin-bottom: 10px;
     }
+
+    /* Footer Responsive */
 
     .footerh p {
         display: flex;
