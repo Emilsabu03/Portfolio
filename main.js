@@ -1,3 +1,5 @@
+console.log(document.querySelector(".home-info h3").textContent);
+
 // Time-based greeting
 window.onload = function() {
     const greeting = document.querySelector(".home-info h3");
