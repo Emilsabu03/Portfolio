@@ -3,16 +3,16 @@ console.log(document.querySelector(".home-info h3").textContent);
 
 // Time-based greeting
 window.onload = function() {
-    const greeting = document.querySelector(".home-info h3");
-    const currentHour = new Date().getHours();
+    const greeting = document.querySelector(".home-info h3");  // Select the greeting element
+    const currentHour = new Date().getHours();  // Get the current hour
     let greetingText = "Hi, I'm a Graphic Designer"; // Default greeting
 
     if (currentHour < 12) {
-        greetingText = "Good Morning, I'm a Graphic Designer";
+        greetingText = "Good Morning, I'm a Graphic Designer";  // Morning greeting
     } else if (currentHour < 18) {
-        greetingText = "Good Afternoon, I'm a Graphic Designer";
+        greetingText = "Good Afternoon, I'm a Graphic Designer";  // Afternoon greeting
     } else {
-        greetingText = "Good Evening, I'm a Graphic Designer";
+        greetingText = "Good Evening, I'm a Graphic Designer";  // Evening greeting
     }
 
     // Update the greeting text dynamically
@@ -23,7 +23,7 @@ window.onload = function() {
 };
 
 // Social media icon hover effect
-const socialLinks = document.querySelectorAll('.social a');
+const socialLinks = document.querySelectorAll('.social a');  // Select all social links
 
 socialLinks.forEach(link => {
     link.addEventListener('mouseover', () => {
