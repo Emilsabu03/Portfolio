@@ -406,4 +406,8 @@ th {
         padding: 10%;
         transform: translateY(300px);
     }
+
+    .morning {
+        color: aquamarine;
+    }
 }
