@@ -1,3 +1,4 @@
+// Log the current greeting text content (default or updated)
 console.log(document.querySelector(".home-info h3").textContent);
 
 // Time-based greeting
@@ -16,6 +17,9 @@ window.onload = function() {
 
     // Update the greeting text dynamically
     greeting.textContent = greetingText;
+
+    // Log the updated greeting text in the console after the page is loaded
+    console.log(greeting.textContent);
 };
 
 // Social media icon hover effect
