@@ -408,6 +408,15 @@ th {
     }
 
     .morning {
-        color: rgb(255, 255, 255);
+        color: #ff9900; 
     }
+    
+    .afternoon {
+        color: #00ccff; 
+    }
+    
+    .evening {
+        color: #9933ff; 
+    }
+    
 }
