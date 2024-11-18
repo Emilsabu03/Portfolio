@@ -41,10 +41,6 @@ window.onload = function() {
     const footerYear = document.getElementById("year");
     footerYear.textContent = new Date().getFullYear();
     
-    
-
-
-
     // Greetings and date in console
     console.log("Hi! I'm Emil Sabu");
     const currentDate = new Date();
