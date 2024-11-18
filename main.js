@@ -25,18 +25,26 @@ window.onload = function() {
     const footerYear = document.getElementById("year");
     footerYear.textContent = new Date().getFullYear();
 
-    // Javascript for Odd and Even numbers
-    const numberList = document.querySelector(".number-list");
-    if (numberList) {
-        for (let i = 1; i <= 10; i++) {
-            const listItem = document.createElement("li");
-            listItem.textContent = i % 2 === 0 ? `${i} is even` : `${i} is odd`;
-            numberList.appendChild(listItem);
-            console.log(listItem.textContent);
-        }
-    } else {
-        console.error("Element with class 'number-list' not found.");
-    }
+
+
+    // Greetings and date in console
+    console.log("Hi! I'm Emil Sabu");
+    const currentDate = new Date();
+   const currentYear = currentDate.getFullYear();
+   console.log("Today's date is:", currentDate.toString());
+
+       // Javascript for Odd and Even numbers
+       const numberList = document.querySelector(".number-list");
+       if (numberList) {
+           for (let i = 1; i <= 10; i++) {
+               const listItem = document.createElement("li");
+               listItem.textContent = i % 2 === 0 ? `${i} is even` : `${i} is odd`;
+               numberList.appendChild(listItem);
+               console.log(listItem.textContent);
+           }
+       } else {
+           console.error("Element with class 'number-list' not found.");
+       }
 };
 
 // Hover effects for social media links
