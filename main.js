@@ -16,6 +16,22 @@ window.onload = function() {
         greetingColor = "#270dd4"; // Color for evening
     }
 
+    const alertButton = document.getElementById("btn-alert");
+    if (alertButton) {
+    alertButton.addEventListener("click", () => {
+        alert("Hello world!");
+        
+    });
+    alertButton.onmouseover = function () {
+        alertButton.innerText = "Click the button!";
+        };
+    
+        alertButton.onmouseout = function () {
+        alertButton.innerText = "Click Here";
+        };
+    }   
+
+
     greeting.textContent = greetingText;
     greeting.style.color = greetingColor; 
 
@@ -24,6 +40,8 @@ window.onload = function() {
     // Current year displaying in footer
     const footerYear = document.getElementById("year");
     footerYear.textContent = new Date().getFullYear();
+    
+    
 
 
 
