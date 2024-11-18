@@ -1,5 +1,5 @@
 window.onload = function() {
-    // Greetings for each time
+    // Greetings for particular time
     const greeting = document.querySelector(".home-info h3");  
     const currentHour = new Date().getHours();  
     let greetingText = "Hi, I'm a Graphic Designer"; 
@@ -16,58 +16,52 @@ window.onload = function() {
         greetingColor = "#270dd4"; // Color for evening
     }
 
-    const alertButton = document.getElementById("btn-alert");
-    if (alertButton) {
-    alertButton.addEventListener("click", () => {
-        alert("Hello world!");
-        
-    });
-    alertButton.onmouseover = function () {
-        alertButton.innerText = "Click the button!";
-        };
-    
-        alertButton.onmouseout = function () {
-        alertButton.innerText = "Click Here";
-        };
-    }   
-
-
     greeting.textContent = greetingText;
     greeting.style.color = greetingColor; 
 
-    console.log(greeting.textContent); // Greeting text
+    // Interactions for buttons
+    const alertButton = document.getElementById("btn-alert");
+    if (alertButton) {
+        alertButton.addEventListener("click", () => {
+            alert("Hello world!");
+        });
+        
+        alertButton.onmouseover = function () {
+            alertButton.innerText = "Click the button!";
+        };
+        
+        alertButton.onmouseout = function () {
+            alertButton.innerText = "Click Here";
+        };
+    }
 
     // Current year displaying in footer
     const footerYear = document.getElementById("year");
     footerYear.textContent = new Date().getFullYear();
     
-    // Greetings and date in console
-    console.log("Hi! I'm Emil Sabu");
+    // Greeting text and current date
+    console.log(greeting.textContent);
     const currentDate = new Date();
-   const currentYear = currentDate.getFullYear();
-   console.log("Today's date is:", currentDate.toString());
+    console.log("Hi! I'm Emil Sabu");
+    console.log("Today's date is:", currentDate.toString());
 
-       // Javascript for Odd and Even numbers
-       const numberList = document.querySelector(".number-list");
-       if (numberList) {
-           for (let i = 1; i <= 10; i++) {
-               const listItem = document.createElement("li");
-               listItem.textContent = i % 2 === 0 ? `${i} is even` : `${i} is odd`;
-               numberList.appendChild(listItem);
-               console.log(listItem.textContent);
-           }
-       } else {
-           console.error("Element with class 'number-list' not found.");
-       }
+    // Number List loop
+    const numbersList = document.getElementById("numbers");
+
+    for (let i = 1; i <= 12; i++) {
+        const listItem = document.createElement("li"); 
+        listItem.textContent = `${i} is ${i % 2 === 0 ? 'even' : 'odd'}`; 
+        numbersList.appendChild(listItem); 
+    }
+
+    // Social Media Link 
+    const socialLinks = document.querySelectorAll('.social a');
+    socialLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            link.style.color = '#ff6620'; 
+        });
+        link.addEventListener('mouseout', () => {
+            link.style.color = ''; 
+        });
+    });
 };
-
-// Hover effects for social media links
-const socialLinks = document.querySelectorAll('.social a');
-socialLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        link.style.color = '#ff6620'; 
-    });
-    link.addEventListener('mouseout', () => {
-        link.style.color = ''; 
-    });
-});

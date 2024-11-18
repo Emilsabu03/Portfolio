@@ -122,6 +122,21 @@ a {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); 
 }
 
+.number-list-container {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#numbers {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+#numbers li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
 
 .home-info .button-social .social {
     margin-left: 25px;
@@ -280,6 +295,9 @@ th {
     text-align: center;
     transform: translateY(370px);
 }
+.number-list-container {
+    color: #45a049;
+}
 
 /* Responsive Dimension */
 
@@ -408,7 +426,7 @@ th {
         display: flex;
         font-size: 12px;
         padding: 15%;
-        transform: translateY(-65px);
+        transform: translateY(300px);
     }
 
     .footerp p {
@@ -478,7 +496,7 @@ th {
     .alert-button #btn-alert:active {
         transform: translateY(10); 
         box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); 
-    }
+        }
     
         .alert-button #btn-alert {
             font-size: 8px; 
@@ -488,7 +506,21 @@ th {
     
         .alert-button {
             margin-top: 40px; 
-        }
+    }
+
+    .number-list li {
+        display: flex;
+        list-style-type: none;
+        font-size: 18px;
+        color: #333;
+        padding: 0.1px;
+    }
+
+    .number-list-container {
+        color: #45a049;
+        margin-top: 60px;
+    }
+    
     
     
 }
