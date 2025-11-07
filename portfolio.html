@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emil Sabu | Portfolio</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./Images/favicon.png">
 </head>
+
 <body>
-    <!-- Navbar -->
+  <!-- Header / Navigation -->
+  <header>
     <nav class="navbar">
-        <a href="index.html" class="logo"><b>Portfolio.</b></a>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="portfolio.html" class="active">Portfolio</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      <a href="index.html" class="logo"><strong>Portfolio.</strong></a>
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> 
+    </nav> 
+  </header>
 
-    <!-- Projects -->
+  <!-- Main Content -->
+  <main>
     <section class="portfolio-section">
-        <div class="visual">
-            <h1><b>Projects From Visual Design</b></h1>
-        </div>
-        <div class="portfolio-gallery">
-            <img src="./Images/the_logo.png" alt="My Logo">
-            <img src="./Images/Hi_guitar.jpg" alt="Cluttered Image of Guitar">
+      <div class="commercial">
+        <h1 class="highlight-title">Commercial Project Showcase</h1>
+
+
+        <!-- Commercial Video -->
+        <div class="video-container" style="margin-bottom: 20px;">
+          <video controls width="100%">
+            <source src="Videos/Commercial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
 
-        <div class="box">
-            <h1><b>Photos From Digital Media Foundation</b></h1>
+        <!-- BTS Gallery (Photo + Looping MP4) -->
+        <div class="bts-gallery">
+          <img src="./Images/Commercial pic.jpg" alt="Behind the Scenes">
+          <video autoplay loop muted playsinline>
+            <source src="Videos/Commercial bts.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="portfolio-gallery">
-            <img src="./Images/LinkedInProfile.png" alt="My LinkedIn profile picture">
-            <img src="./Images/my_lighting.JPG" alt="Lighting project from Digital Media Foundation">
-        </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footerp">
-        <p>&copy; 2025 Emil Sabu — All Rights Reserved</p>
-    </footer>
+<!-- Print Work Showcase -->
+<div class="print-work">
+  <h1><b>Print Work Showcase</b></h1>
+
+  <div class="print-gallery">
+    <div class="print-item">
+      <img src="./Images/Business card.png" alt="Print Design 1">
+      <div class="melts-logo">
+        <img src="./Images/Chcoclate.png" alt="Melts Logo">
+      </div>
+    </div>
+
+    <div class="print-item">
+      <img src="./Images/PXL_20251028_174238570.jpg" alt="Print Design 2">
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Emil Sabu — All Rights Reserved</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js"></script>
 </body>
 </html>
