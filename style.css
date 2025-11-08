@@ -436,7 +436,7 @@ footer p {
   }
 }
 @media (max-width: 900px) {
-  .bts-gallery,
+  .bts-gallery
   .portfolio-gallery {
     flex-direction: column;
     align-items: center;

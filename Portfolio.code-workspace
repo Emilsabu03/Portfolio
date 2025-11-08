@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Portfolio",
+			"path": "."
+		},
+		{
+			"name": "Images",
+			"path": "../../Documents/GitHub/story-starter/Portfolio/Portfolio/Images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio",
+		"liveServer.settings.port": 5501
+	}
+}
