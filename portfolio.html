@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emil Sabu | Portfolio</title>
-
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./Images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Emil Sabu</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./Images/favicon.png">
 </head>
-
 <body>
-  <!-- Header / Navigation -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo"><strong>Portfolio.</strong></a>
-      <ul class="nav-links">
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul> 
-    </nav> 
-  </header>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><strong>Portfolio.</strong></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> 
+        </nav> 
+    </header>
 
-  <!-- Main Content -->
-  <main>
-    <section class="portfolio-section">
-      <div class="commercial">
-        <h1 class="highlight-title">Commercial Project Showcase</h1>
+    <main class="portfolio-section">
+        <section class="project-block">
+            <h1 class="highlight-title">Commercial Project</h1>
+            <div class="project-meta">
+                <strong>Context</strong>
+                <p>Promotional video production for lifestyle branding.</p>
+                <strong>Role</strong>
+                <p>Lead Editor. Managed storyboarding and post-production flow.</p>
+                <strong>Outcome</strong>
+                <p>A high-impact spot optimized for social media engagement.</p>
+            </div>
+            <div class="video-container">
+                <video autoplay controls loop muted width="100%"><source src="Videos/Commercial.mp4" type="video/mp4"></video>
+            </div>
+            <div class="bts-gallery">
+                <img src="./Images/Commercial pic.jpg" alt="BTS">
+                <video autoplay loop muted playsinline><source src="Videos/Commercial bts.mp4" type="video/mp4"></video>
+            </div>
+        </section>
 
+        <section class="project-block">
+            <h1 class="highlight-title">Melta Branding</h1>
+            <div class="project-meta">
+                <strong>Context</strong>
+                <p>Brand identity for a premium boutique chocolate brand.</p>
+                <strong>Role</strong>
+                <p>Graphic Designer. Developed visual identity and print assets.</p>
+                <strong>Outcome</strong>
+                <p>A cohesive brand system ready for commercial deployment.</p>
+            </div>
+            <div class="print-gallery">
+                <div class="print-item"><img src="./Images/Business card.png" alt="Melta Card"></div>
+                <div class="print-item"><img src="./Images/PXL_20251028_174238570.jpg" alt="Melta Sample"></div>
+            </div>
+        </section>
 
-        <!-- Commercial Video -->
-        <div class="video-container" style="margin-bottom: 20px;">
-          <video autoplay controls loop muted width="100%">
-            <source src="Videos/Commercial.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <section class="project-block">
+            <h1 class="highlight-title">Kids Fun n Learn Centre</h1>
+            <div class="project-meta">
+                <strong>Context</strong>
+                <p>Rebranding project for a local daycare facility to improve professional appeal.</p>
+                <strong>Role</strong>
+                <p>Lead Graphic Designer. Redesigned the logo and business cards.</p>
+                <strong>Outcome</strong>
+                <p>A warm, educational identity that better reflects the facility's values.</p>
+            </div>
+            <div class="print-gallery">
+                <div class="print-item">
+                    <img src="./Images/Kids_fun_logo.png" alt="Daycare Logo">
+                </div>
+                <div class="print-item">
+                    <img src="./Images/Business_card_daycare.png" alt="Daycare Business Card">
+                </div>
+            </div>
+        </section>
 
-        <!-- BTS Gallery (Photo + Looping MP4) -->
-        <div class="bts-gallery">
-          <img src="./Images/Commercial pic.jpg" alt="Behind the Scenes">
-          <video autoplay loop muted playsinline>
-            <source src="Videos/Commercial bts.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+        <section class="project-block">
+            <h1 class="highlight-title">Finder: AI Remote Support</h1>
+            <div class="project-meta">
+                <strong>Context</strong>
+                <p>Capstone project featuring an AI-driven platform for Mac remote support.</p>
+                <strong>Role</strong>
+                <p>Brand Identity Designer. Created the core logo and icon set.</p>
+                <strong>Outcome</strong>
+                <p>A minimalist visual language that emphasizes technical precision.</p>
+            </div>
+            <div class="print-gallery single-img">
+                <div class="print-item">
+                    <img src="./Images/Finder2.png" alt="Finder Logo">
+                </div>
+            </div>
+        </section>
+    </main>
 
-<!-- Print Work Showcase -->
-<div class="print-work">
-  <h1><b>Print Work Showcase</b></h1>
+    <footer class="footerp">
+        <p>&copy; 2026 Emil Sabu — All Rights Reserved</p>
+    </footer>
 
-  <div class="print-gallery">
-    <div class="print-item">
-      <img src="./Images/Business card.png" alt="Print Design 1">
-      <div class="melts-logo">
-        <img src="./Images/Chcoclate.png" alt="Melts Logo">
-      </div>
-    </div>
-
-    <div class="print-item">
-      <img src="./Images/PXL_20251028_174238570.jpg" alt="Print Design 2">
-    </div>
-  </div>
-</div>
-
-
-  <footer>
-    <p>&copy; 2025 Emil Sabu — All Rights Reserved</p>
-  </footer>
-
-  <!-- Script -->
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
