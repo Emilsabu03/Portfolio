@@ -55,6 +55,11 @@ body {
     font-weight: 500;
 }
 
+.nav-links a.active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 /* =========================================
    3. HOME SECTION
    ========================================= */
@@ -63,6 +68,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 8rem 10%;
+    min-height: 80vh;
 }
 
 .home-info h1 {
@@ -83,6 +89,12 @@ body {
     color: #e0e0e0;
 }
 
+.button-social {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .button {
     padding: 0.7rem 1.8rem;
     background: var(--neon-green);
@@ -91,6 +103,36 @@ body {
     font-weight: 700;
     text-decoration: none;
     box-shadow: 0 0 20px rgba(118, 255, 3, 0.4);
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.social {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.social a {
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    border: 1.5px solid var(--primary-green);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social a:hover {
+    background-color: var(--primary-green);
+    color: var(--bg-black);
+    transform: translateY(-3px);
 }
 
 .home-img img {
@@ -102,13 +144,12 @@ body {
 }
 
 /* =========================================
-   4. CONTACT SECTION (ALIGNMENT FIXED)
+   4. CONTACT SECTION (FIXED ALIGNMENT)
    ========================================= */
 .contact-section {
-    padding: 5rem 10%; /* Matches Portfolio padding */
+    padding: 5rem 10%;
     text-align: center;
-    min-height: auto; /* Removed min-height to stop it from centering vertically */
-    display: block;   /* Changed from flex to block for standard alignment */
+    display: block; 
 }
 
 .contact-section .highlight-title {
@@ -182,7 +223,7 @@ body {
 }
 
 /* =========================================
-   6. PORTFOLIO SECTION (UNTOUCHED AS REQUESTED)
+   6. PORTFOLIO SECTION (UNTOUCHED)
    ========================================= */
 .portfolio-section {
     padding: 5rem 10%;
@@ -235,7 +276,8 @@ footer, .footerp, .footers, .footera {
 /* =========================================
    8. RESPONSIVE
    ========================================= */
-@media (max-width: 768px) {
-    .home { flex-direction: column; text-align: center; }
-    .home-img img { width: 300px; height: 300px; }
+@media (max-width: 900px) {
+    .home { flex-direction: column; text-align: center; padding: 4rem 5%; }
+    .home-img img { width: 300px; height: 300px; margin-top: 2rem; }
+    .bts-gallery, .print-gallery { grid-template-columns: 1fr; }
 }
